@@ -19,6 +19,9 @@ sources:
         - https://github.com/temporalio/temporal
 
 dependencies:
+  - name: metrics-server
+    version: 2.11.1
+    repository: https://kubernetes-charts.storage.googleapis.com
   - name: cassandra
     version: "0.14.3"
     repository: https://kubernetes-charts-incubator.storage.googleapis.com/
