@@ -12,6 +12,11 @@ metadata:
     app.kubernetes.io/part-of: {{ .Chart.Name }}
 data:
   config_template.yaml: |-
+
+    dynamicConfigClient:
+      filepath: "/etc/temporal/config/dynamicconfig/development_es.yaml"
+      pollInterval: "10s"
+
     log:
       stdout: true
       level: {{ .Values.server.config.logLevel | quote }}
